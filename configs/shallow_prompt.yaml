@@ -1,0 +1,49 @@
+backbone: "ViT-B/32"
+n_prompt_tokens_L: 8
+n_prompt_tokens_V: 5
+loss_type: "ce"
+intrinsic_dim_L: 500
+intrinsic_dim_V: 500
+sigma: 1
+k_shot: 16
+seed: 42
+bound: 0
+batch_size: 64
+popsize: 30
+train_mode: true
+DTD:
+  budget: 36000
+  test_every: 12
+
+UCF-101:
+  budget: 25200
+  test_every: 12
+
+EuroSAT:
+  budget: 25200
+  test_every: 12
+
+StanfordCars:
+  budget: 25200
+  test_every: 12
+
+OxfordPets:
+  budget: 3600
+  test_every: 12
+
+Food101:
+  budget: 3600
+  test_every: 12
+
+caltech101:
+  budget: 3600
+  test_every: 12
+
+SUN397:
+  budget: 18000
+  test_every: 12
+
+ImageNet:
+  budget: 14400
+  test_every: 60
+
