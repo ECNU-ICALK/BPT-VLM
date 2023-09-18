@@ -82,4 +82,30 @@ python python BBT_VL_Shallow.py --task_name caltech101 --opt shallow_cma [--para
 # Deep Prompt Tuning
 python python BBT_VL_Deep.py --task_name caltech101 --opt deep_cma [--parallel]
 ```
-- `--parallel` is optinal to  support parallel black-box tuning for `[shallow_cma,deep_cma]`. That is, you can evaluate a population of solutions in parallel by putting them into a single large batch. 
+- `--parallel` is optinal to  support parallel black-box tuning for `[shallow_cma,deep_cma]`. That is, you can evaluate a population of solutions in parallel by putting them into a single large batch.
+
+## Acknowledgments
+We would like to thank the following individuals and organizations for their contributions to this project:
+
+Evolutionary-Intelligence: for their development of the open-source library  [PyPop7](https://github.com/Evolutionary-Intelligence/pypop) which inspired our work
+```
+@article{duan2022pypop7,
+  title={PyPop7: A Pure-Python Library for Population-Based Black-Box Optimization},
+  author={Duan, Qiqi and Zhou, Guochen and Shao, Chang and Wang, Zhuowei and Feng, Mingyang and Yang, Yijun and Zhao, Qi and Shi, Yuhui},
+  journal={arXiv preprint arXiv:2212.05652},
+  year={2022}
+}
+```
+
+PyCMA: for the implementation of CMA-ES and a few related numerical optimization tools in [PyCMA](https://github.com/CMA-ES/pycma)
+```
+@misc{hansen2019pycma,
+  author       = {Nikolaus Hansen and Youhei Akimoto and Petr Baudis},
+  title        = {{CMA-ES/pycma} on {G}ithub},
+  howpublished = {Zenodo, DOI:10.5281/zenodo.2559634},
+  month        = feb,
+  year         = 2019,
+  doi          = {10.5281/zenodo.2559634},
+  url          = {https://doi.org/10.5281/zenodo.2559634},
+}
+```
